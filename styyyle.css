@@ -1,0 +1,94 @@
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 100vh;
+    background-size: cover;
+    z-index: -100;
+    background: url('./menu.png') center center no-repeat;
+}
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 14px;
+    }
+header {
+    max-width: 80%;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+nav {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    width: 100%;
+    padding: 30px 0 10px;
+}
+nav .logo{
+    width: 200px;
+     background-size: cover; /* Redimensionner l'image pour couvrir l'ensemble du fond */
+    background-position: center; /* Positionner l'image au centre */
+    background-repeat: no-repeat; /* Ne pas répéter l'image */
+}
+
+/* h1 {
+    font-size: 120px;
+    line-height: 5px;
+    margin-bottom: 1rem;
+    color: #97ec21;
+    text-align: center;
+    justify-content: center;
+    font-family: 'VotrePolice', sans-serif;
+    font-family: 'VotrePolice', sans-serif;
+
+} */
+h1 {
+    font-family: 'Your Font Here', sans-serif; /* Remplacez 'Your Font Here' par le nom de la police de caractères que vous souhaitez utiliser */
+    font-size: 90px; /* Taille de la police */
+    color: #eaeaee; /* Couleur du texte */
+    text-align: center; /* Alignement du texte */
+    text-transform: uppercase; /* Transformation en majuscules */
+    letter-spacing: 2px; /* Espacement entre les lettres */
+    margin-bottom: 20px; /* Marge en bas */
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Ombre du texte */
+}
+h1:hover{
+    color: #f70b0b;
+}
+
+.btn{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 550px;
+}
+
+#start-btn {
+    font-size: 40px;
+    text-align: center;
+    align-self: flex-end;
+    padding: 5px 10px;
+    background-color: #2eb0f0;
+    border: 2px solid #fff;
+    border-radius: 4px;
+    color: #fff;
+}
+
+#start-btn:hover{
+    cursor: pointer;
+    background-color: #fff;
+    color: #f02e2e;
+}
+nav ul li a:hover {
+    color: #f02e2e;
+}
